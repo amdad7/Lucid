@@ -6,7 +6,7 @@ from accounts.models import User
 class RegistrationForm(UserCreationForm):
     class Meta:
         model = User
-        fields = ['name', 'email', 'password1', 'password2']
+        fields = ['name', 'email', 'password', 'confirm_password']
         error_messages = {
             'name': {
                 'required': 'Name is required'
