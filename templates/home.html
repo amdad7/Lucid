@@ -1,0 +1,10 @@
+<h1>hello</h1>
+{% for song in songs %}
+    <p>{{song.title}} {{song.upvotes}}</p>
+{% endfor %}
+<a href="{% url 'accounts:register' %}">'register'</a>
+<form  action="{% url 'accounts:register' %}" method="post">
+    {% csrf_token %}
+    <p>{{form}}</p>
+    <button type="submit">register</button>
+</form>    
