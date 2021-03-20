@@ -1,0 +1,13 @@
+<div>
+<form method="POST" action="{% url 'accounts:login' %}">
+    <label>login</label>
+    <input name="email">email</input>
+    <input name="password">password</input>
+    <button type="submit">login</button>
+</form>
+<form  action="{% url 'accounts:register' %}" method="post">
+    {% csrf_token %}
+    <p>{{form}}</p>
+    <button type="submit">register</button>
+</form> 
+</div>

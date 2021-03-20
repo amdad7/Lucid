@@ -1,0 +1,19 @@
+{% load static %}
+<!doctype html>
+<html>
+    <head>
+        <title>{% block title %} LUCID {% endblock %}</title>
+    </head>
+    <body>
+        <div>
+            <h1>LUCID</h1>
+            <h2>go to place for you music instincts!!</h2>    
+        </div>
+        <div id="content">
+            {% block content %}{% endblock %}
+        </div>
+        <div id="log">
+            {% block log %}{% endblock %}
+        </div>
+    </body>
+</html>
